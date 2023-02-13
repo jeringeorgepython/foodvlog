@@ -1,0 +1,14 @@
+<component name="InspectionProjectProfileManager">
+  <profile version="1.0">
+    <option name="myName" value="Project Default" />
+    <inspection_tool class="PyUnresolvedReferencesInspection" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="ignoredIdentifiers">
+        <list>
+          <option value="dict.info" />
+          <option value="demo_avodha_app.models.shop.objects" />
+          <option value="django.forms.ModeForm" />
+        </list>
+      </option>
+    </inspection_tool>
+  </profile>
+</component>

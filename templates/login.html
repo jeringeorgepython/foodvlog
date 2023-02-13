@@ -1,0 +1,95 @@
+
+<!--<html>-->
+<!--<head>-->
+
+<!--<title>LOG IN</title>-->
+<!--<link rel="stylesheet" href="style.css">-->
+<!--</head>-->
+
+<!--<body>-->
+<!-- <center>-->
+<!--   <h1>LOG IN</h1></center>-->
+<!-- <form action="register" method="post">-->
+<!--    {% csrf_token %}-->
+<!--  <div class="con">-->
+<!--  <table align="center" cellpadding = "10">-->
+<!--    <tr>-->
+<!--      <td>Username</td>-->
+<!--      <td> <input type="text" name="username" placeholder="username"></td>-->
+<!--      </tr>-->
+<!--    <tr>-->
+<!--      <td>Password</td>-->
+<!--      <td><input type="password" name="password" placeholder="password"></td><br>-->
+<!--    -->
+<!--    </tr>-->
+<!--    </div>-->
+<!--  </table>-->
+<!--<center>-->
+<!--<tr>-->
+<!--   <td><input type="submit" value="login"></td>-->
+<!--</tr>-->
+<!--</center>-->
+<!-- </form>-->
+<!--&lt;!&ndash;  <tr>&ndash;&gt;-->
+<!--&lt;!&ndash;      &ndash;&gt;-->
+<!--&lt;!&ndash;      <td>Age</td>&ndash;&gt;-->
+<!--&lt;!&ndash;      <td><input name="" type="text" /></td>&ndash;&gt;-->
+<!--&lt;!&ndash;    </tr>&ndash;&gt;-->
+<!--&lt;!&ndash;    <tr>&ndash;&gt;-->
+<!--&lt;!&ndash;      <td>Gender</td>&ndash;&gt;-->
+<!--&lt;!&ndash;      <td><select name="">&ndash;&gt;-->
+<!--&lt;!&ndash;      <option>Male</option>&ndash;&gt;-->
+<!--&lt;!&ndash;       <option>Female</option>&ndash;&gt;-->
+<!--&lt;!&ndash;      </select></td>&ndash;&gt;-->
+<!--&lt;!&ndash;      <td>Mobile No</td>&ndash;&gt;-->
+<!--&lt;!&ndash;      <td><input name="" type="text" /></td>&ndash;&gt;-->
+<!--&lt;!&ndash;    </tr>&ndash;&gt;-->
+<!--&lt;!&ndash;    <tr>&ndash;&gt;-->
+<!--&lt;!&ndash;      <td>Email Address</td>&ndash;&gt;-->
+<!--&lt;!&ndash;      <td colspan="4"><input name="email" type="text" size="62"></td>&ndash;&gt;-->
+<!--&lt;!&ndash;    </tr>&ndash;&gt;-->
+<!--&lt;!&ndash;    <tr>&ndash;&gt;-->
+<!--&lt;!&ndash;      <td>Address</td>&ndash;&gt;-->
+<!--&lt;!&ndash;      <td colspan="4"><textarea name="" cols="53" rows="5"></textarea></td>&ndash;&gt;-->
+<!--&lt;!&ndash;    </tr>&ndash;&gt;-->
+<!--&lt;!&ndash;    <tr>&ndash;&gt;-->
+<!--&lt;!&ndash;      <td>City</td>&ndash;&gt;-->
+<!--&lt;!&ndash;      <td><input name="" type="text" /></td>&ndash;&gt;-->
+<!--&lt;!&ndash;      <td>State</td>&ndash;&gt;-->
+<!--&lt;!&ndash;      <td><input name="" type="text" /></td>&ndash;&gt;-->
+<!--&lt;!&ndash;    </tr>&ndash;&gt;-->
+<!--&lt;!&ndash;    <tr>&ndash;&gt;-->
+<!--&lt;!&ndash;      <td>Country</td>&ndash;&gt;-->
+<!--&lt;!&ndash;      <td><input name="" type="text" /></td>&ndash;&gt;-->
+<!--&lt;!&ndash;      <td>Pin</td>&ndash;&gt;-->
+<!--&lt;!&ndash;      <td><input name="" type="text" /></td>&ndash;&gt;-->
+<!--&lt;!&ndash;    </tr>&ndash;&gt;-->
+<!--&lt;!&ndash;    &ndash;&gt;-->
+<!--&lt;!&ndash;    <tr>&ndash;&gt;-->
+<!--&lt;!&ndash;      <td></td>&ndash;&gt;-->
+<!--&lt;!&ndash;      <td colspan="4"><input type="submit" value="Submit" class="submit"></td>&ndash;&gt;-->
+<!--&lt;!&ndash;      &ndash;&gt;-->
+<!--&lt;!&ndash;    </tr>&ndash;&gt;-->
+<!--    -->
+<!--&lt;!&ndash;  </table>&ndash;&gt;-->
+<!--&lt;!&ndash; </div>&ndash;&gt;-->
+<!--</body>-->
+<!--</html>-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>login</title>
+</head>
+<body>
+<center>
+    <h1>Login</h1>
+<form  action="login" method="post">
+    {% csrf_token %}
+    <input type="text" name="username" placeholder="username">
+    <input type="password" name="password" placeholder="password">
+    <input type="submit" value="login">
+</form>
+</center>
+</body>
+</html>

@@ -1,0 +1,4 @@
+Operations to perform:
+  Apply all migrations: admin, auth, contenttypes, sessions, shop
+Running migrations:
+  Applying shop.0001_initial... OK

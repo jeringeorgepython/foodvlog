@@ -1,0 +1,145 @@
+
+<!--<html>-->
+<!--<head>-->
+
+<!--<title>REGISTRATION FORM</title>-->
+<!--<link rel="stylesheet" href="style.css">-->
+<!--</head>-->
+
+<!--<body>-->
+<!-- <center>-->
+<!--   <h1>REGISTRATION FORM</h1></center>-->
+<!-- <form action="register" method="post">-->
+<!--    {% csrf_token %}-->
+<!--  <div class="con">-->
+<!--  <table align="center" cellpadding = "10">-->
+<!--    <tr>-->
+<!--      <td>First Name</td>-->
+<!--      <td><input name="first_name" type="text" /></td>-->
+<!--      <td>Last Name</td>-->
+<!--      <td><input name="last_name" type="text" /></td>-->
+<!--    </tr>-->
+<!--      <tr>-->
+<!--          <td><input type="text" name="username" placeholder="username"><br></td>-->
+<!--&lt;!&ndash;          <input type="text" name="first_name" placeholder="firstname"><br>&ndash;&gt;-->
+<!--&lt;!&ndash;          <input type="text" name="last_name" placeholder="lastname"><br>&ndash;&gt;-->
+<!--          <td><input type="email" name="email" placeholder="email"><br></td>-->
+<!--          <td><input type="password" name="password1" placeholder="password"><br></td>-->
+<!--          <td><input type="password" name="password2" placeholder="confirm password"><br></td>-->
+<!--&lt;!&ndash;          <input type="submit" value="register">&ndash;&gt;-->
+<!--      </tr>-->
+<!--  -->
+<!--  <tr>-->
+<!--      -->
+<!--      <td>Age</td>-->
+<!--      <td><input name="" type="text" /></td>-->
+<!--    </tr>-->
+<!--    <tr>-->
+<!--      <td>Gender</td>-->
+<!--      <td><select name="">-->
+<!--      <option>Male</option>-->
+<!--       <option>Female</option>-->
+<!--       <option>Others</option>-->
+<!--      </select></td>-->
+<!--      <td>Mobile No</td>-->
+<!--      <td><input name="" type="text" /></td>-->
+<!--    </tr>-->
+<!--    <tr>-->
+<!--      <td>Email Address</td>-->
+<!--      <td colspan="4"><input name="email" type="text" size="62"></td>-->
+<!--    </tr>-->
+<!--    <tr>-->
+<!--      <td>Address</td>-->
+<!--      <td colspan="4"><textarea name="" cols="53" rows="5"></textarea></td>-->
+<!--    </tr>-->
+<!--    <tr>-->
+<!--      <td>City</td>-->
+<!--      <td><input name="" type="text" /></td>-->
+<!--      <td>State</td>-->
+<!--      <td><input name="" type="text" /></td>-->
+<!--    </tr>-->
+<!--    <tr>-->
+<!--      <td>Country</td>-->
+<!--      <td><input name="" type="text" /></td>-->
+<!--      <td>Pin</td>-->
+<!--      <td><input name="" type="text" /></td>-->
+<!--    </tr>-->
+<!--    -->
+<!--    <tr>-->
+<!--      <td></td>-->
+<!--&lt;!&ndash;      <td colspan="4"><input type="submit" value="Submit" class="submit"></td>&ndash;&gt;-->
+<!--      -->
+<!--    </tr>-->
+<!--    -->
+<!--  </table>-->
+<!-- </div>-->
+<!-- </form>-->
+<!--     <div>-->
+<!-- {% for message in messages %}-->
+<!--    <h4>{{message}}</h4>-->
+<!--    {% endfor %}-->
+<!--     </div>-->
+<!--</body>-->
+<!--</html>-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>welcome</title>
+</head>
+<body>
+<center>
+    <h1>Registration</h1>
+<form action="register" method="post">
+    {% csrf_token %}
+    <input type="text" name="username" placeholder="username">
+    <input type="text" name="first_name" placeholder="firstname">
+    <input type="text" name="last_name" placeholder="lastname"><br>
+    <input type="email" name="email" placeholder="email">
+    <input type="password" name="password1" placeholder="password">
+    <input type="password" name="password2" placeholder="confirm password"><br>
+<!--    <input type="submit" value="register">-->
+<!--</form>-->
+      <td>Age</td>
+      <td><input name="" type="text" /></td>
+    </tr>
+    <tr>
+      <td>Gender</td>
+      <td><select name="">
+      <option>Male</option>
+       <option>Female</option>
+       <option>Others</option>
+      </select></td>
+      <td>Mobile No</td>
+      <td><input name="" type="text" /></td>
+    </tr><br>
+<!--    <tr>-->
+<!--      <td>Email Address</td>-->
+<!--      <td colspan="4"><input name="email" type="text" size="62"></td>-->
+<!--    </tr>-->
+    <tr>
+      <td>Address</td>
+      <td colspan="4"><textarea name="" cols="53" rows="5"></textarea></td>
+    </tr><br>
+    <tr>
+      <td>City</td>
+      <td><input name="" type="text" /></td>
+      <td>State</td>
+      <td><input name="" type="text" /></td>
+    </tr><br>
+    <tr>
+      <td>Country</td>
+      <td><input name="" type="text" /></td>
+      <td>Pin</td>
+      <td><input name="" type="text" /></td>
+    </tr><br>
+    <input type="submit" value="register">
+</form>
+</center>
+<div>
+    {% for message in messages %}
+    <h4>{{message}}</h4>
+    {% endfor %}
+</div>
+</body>
+</html>
